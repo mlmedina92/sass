@@ -1,0 +1,13 @@
+.footer {
+  background-color: $colorFooter;
+  padding: 2rem;
+  text-align: center;
+  p {
+    background: none;
+    color: white;
+    font: {
+      family: sans-serif;
+      size: 12px;
+    }
+  }
+}

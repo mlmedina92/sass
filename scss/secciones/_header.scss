@@ -1,0 +1,31 @@
+.header{
+    h1{
+        color:white;
+        padding: 2rem;
+        //1 rem es 16 px
+        text:{
+            decoration: none;
+            transform: lowercase;
+            align:center;
+        }
+        font:{
+            family: sans-serif;
+            size: 32px;
+        }
+    }
+}
+//mq= condicional 
+
+@media (min-width){
+}
+//if=condicional
+//var color valor: true
+$color:true;
+h1{
+    @if($color == true){
+        background-color: $colorHeader;
+    }
+    else{
+        background-color: $colorFondo;
+    }
+}

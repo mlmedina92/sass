@@ -1,0 +1,35 @@
+$anchoImg: 80%;
+
+img {
+  width: $anchoImg;
+}
+
+//entend
+
+p {
+  @extend %estilosparrafo;
+  background-color: $colorFondo;
+}
+
+body {
+  background-color: $colorFondo;
+  .main {
+    @include contenedor();
+    h2 {
+      //mixin sencillo
+      //include like a pro
+      @include fontstyle($colorTexto, 36px, 900);
+      margin-bottom: 1rem;
+    }
+    h3 {
+      //entend
+      //extend %estilostitulo
+      //mixin
+      @include fontstyle(rgb(10, 23, 32), 18px, 300);
+      margin-bottom: 1rem;
+    }
+    img {
+      margin-bottom: 1rem;
+    }
+  }
+}

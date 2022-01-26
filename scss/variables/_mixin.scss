@@ -1,0 +1,19 @@
+//mixin like a pro
+
+@mixin fontstyle ($color, $tamanio, $peso) {
+    color: $color;
+    font-size: $tamanio;
+    font-weight: $peso;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+//mixin sencillo 
+
+@mixin contenedor{
+    max-width: 80vw;
+    text-align: center;
+    margin: 0 auto;
+    background-color: $colorFondo;  
+    padding: 2rem;
+}

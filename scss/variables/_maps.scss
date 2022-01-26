@@ -1,0 +1,30 @@
+//maps + bucle each
+
+$textoresaltado:(
+    inicio: black,
+    sorpresa: rgb(134, 77, 77),
+    telecom: blue,
+    claro:rgb(116, 54, 54),
+);
+
+@each $frases, $color in $textoresaltado {
+    .#{$frases}{
+        color: $color;
+        font-weight: bold; 
+        font-size:18 px;
+    }
+}
+
+//mapa
+$font-sizes: (
+    h1: 48px,
+    h2: 36px,
+    h3:26px,
+    p:18px,
+);
+
+@each $etiqueta, $tamanio in font-sizes{
+    #{$etiqueta} {
+      font-size: $tamanio;  
+    }
+}
